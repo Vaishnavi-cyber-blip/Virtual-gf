@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "soundFile": "C:\\Users\\265600\\Desktop\\Trial2\\3d\\public\\audio\\lily.wav",
+    "duration": 3.06
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.24, "value": "C" },
+    { "start": 0.24, "end": 0.31, "value": "G" },
+    { "start": 0.31, "end": 0.45, "value": "C" },
+    { "start": 0.45, "end": 0.53, "value": "A" },
+    { "start": 0.53, "end": 0.67, "value": "C" },
+    { "start": 0.67, "end": 1.09, "value": "D" },
+    { "start": 1.09, "end": 1.16, "value": "C" },
+    { "start": 1.16, "end": 1.23, "value": "B" },
+    { "start": 1.23, "end": 1.31, "value": "A" },
+    { "start": 1.31, "end": 1.44, "value": "C" },
+    { "start": 1.44, "end": 1.54, "value": "B" },
+    { "start": 1.54, "end": 1.61, "value": "C" },
+    { "start": 1.61, "end": 1.89, "value": "B" },
+    { "start": 1.89, "end": 2.03, "value": "C" },
+    { "start": 2.03, "end": 2.17, "value": "B" },
+    { "start": 2.17, "end": 2.24, "value": "C" },
+    { "start": 2.24, "end": 2.45, "value": "B" },
+    { "start": 2.45, "end": 2.66, "value": "C" },
+    { "start": 2.66, "end": 2.73, "value": "B" },
+    { "start": 2.73, "end": 3.06, "value": "X" }
+  ]
+}

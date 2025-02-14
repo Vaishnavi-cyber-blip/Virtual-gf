@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "soundFile": "C:\\Users\\265600\\Desktop\\Trial2\\3d\\public\\audio\\greet.wav",
+    "duration": 4.07
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.10, "value": "X" },
+    { "start": 0.10, "end": 0.22, "value": "D" },
+    { "start": 0.22, "end": 0.29, "value": "B" },
+    { "start": 0.29, "end": 0.36, "value": "C" },
+    { "start": 0.36, "end": 0.45, "value": "A" },
+    { "start": 0.45, "end": 0.49, "value": "C" },
+    { "start": 0.49, "end": 0.74, "value": "B" },
+    { "start": 0.74, "end": 0.93, "value": "D" },
+    { "start": 0.93, "end": 0.98, "value": "C" },
+    { "start": 0.98, "end": 1.28, "value": "B" },
+    { "start": 1.28, "end": 1.35, "value": "C" },
+    { "start": 1.35, "end": 1.41, "value": "B" },
+    { "start": 1.41, "end": 1.49, "value": "A" },
+    { "start": 1.49, "end": 1.64, "value": "B" },
+    { "start": 1.64, "end": 1.71, "value": "F" },
+    { "start": 1.71, "end": 1.78, "value": "C" },
+    { "start": 1.78, "end": 2.06, "value": "B" },
+    { "start": 2.06, "end": 2.13, "value": "G" },
+    { "start": 2.13, "end": 2.20, "value": "E" },
+    { "start": 2.20, "end": 2.48, "value": "F" },
+    { "start": 2.48, "end": 2.89, "value": "X" },
+    { "start": 2.89, "end": 2.95, "value": "B" },
+    { "start": 2.95, "end": 3.14, "value": "C" },
+    { "start": 3.14, "end": 3.21, "value": "G" },
+    { "start": 3.21, "end": 3.28, "value": "F" },
+    { "start": 3.28, "end": 3.36, "value": "A" },
+    { "start": 3.36, "end": 3.71, "value": "B" },
+    { "start": 3.71, "end": 4.07, "value": "X" }
+  ]
+}
