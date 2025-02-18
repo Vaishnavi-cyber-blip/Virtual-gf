@@ -39,8 +39,8 @@ export function Avatar(props) {
         smoothMorphTarget: true,
         morphTargetSmoothing: 0.5,
         script: {
-          value: "greet",
-          options: ["lily", "joke","valentine","greet","song"],
+          value: "intro",
+          options: ["lily", "joke","valentine","greet","song","intro"],
         },
         
       });
@@ -61,7 +61,7 @@ export function Avatar(props) {
     useFrame(() => {
         const currentAudioTime = audio.currentTime;
         if (audio.paused || audio.ended) {
-          setAnimation("Idle");
+          setAnimation("Stand");
           return;
         }
     
@@ -167,6 +167,11 @@ export function Avatar(props) {
             setAnimation("Laugh");
 
           }
+          else if(script === "intro"){
+            setAnimation("Intro");
+
+          }
+
           else if(script === "song"){
             setAnimation("Dance");
 
@@ -175,7 +180,7 @@ export function Avatar(props) {
             setAnimation("Talk2");
           }
         } else {
-          setAnimation("Stand");
+          setAnimation("Idle");
           audio.pause();
         }
       }, [playAudio, script]);
@@ -199,6 +204,7 @@ export function Avatar(props) {
             const talk2 = useFBX("/animations/Talking (1).fbx").animations;
             const laugh = useFBX("/animations/Laughing.fbx").animations;
             const stand = useFBX("/animations/Standing Idle.fbx").animations;
+            const intro = useFBX("/animations/Standing Greeting (1).fbx").animations;
         
         const renameAnimation = (anim, name) => {
           if (anim?.length) {
@@ -218,6 +224,7 @@ export function Avatar(props) {
           Talk2: renameAnimation(talk2, "Talk2"),
           Laugh: renameAnimation(laugh, "Laugh"),
           Stand: renameAnimation(stand, "Stand"),
+          Intro: renameAnimation(intro, "Intro"),
         };
       }, []);
 
@@ -226,7 +233,7 @@ export function Avatar(props) {
         const [animation, setAnimation] = useState("Stand");
           
             
-        const { actions } = useAnimations([...animations.Dance, ...animations.Stand, ...animations.Hiphop, ...animations.Idle, ...animations.Cry, ...animations.Talk, ...animations.Talk2, ...animations.Laugh], group);
+        const { actions } = useAnimations([...animations.Dance,...animations.Intro, ...animations.Stand, ...animations.Hiphop, ...animations.Idle, ...animations.Cry, ...animations.Talk, ...animations.Talk2, ...animations.Laugh], group);
       
         // useEffect(() => {
         //     console.log(nodes.Wolf3D_Head.morphTargetDictionary);
@@ -251,8 +258,12 @@ export function Avatar(props) {
           if (headFollow) {
             group.current.getObjectByName("Head").lookAt(state.camera.position);
           }
-        });
+          // else{
+          //   group.current.getObjectByName("Head").lookAt(0,0,0);
 
+          // }
+          
+        });
 
       
 // AVATAR MESH
